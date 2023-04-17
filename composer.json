@@ -1,0 +1,25 @@
+{
+    "name": "bggardner/static-tools",
+    "description": "Helpful static class methods for data-driven web apps",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brent Gardner",
+            "email": "brent@ebrent.net",
+            "homepage": "https://github.com/bggardner"
+        }
+    ],
+    "keywords": [
+        "static",
+        "pdo",
+        "mysql",
+        "tree",
+        "query",
+        "session"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bggardner\\StaticTools\\": "src/"
+        }
+    }
+}
