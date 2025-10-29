@@ -10,13 +10,13 @@ Two of the most command and/or useful "static" classes in this repository are `P
 The `PDO` class is simply a wrapper for a `\PDO` instance, so you can statically call any `\PDO` method as you would with a normal instance.
 The `PDO` class has two additional static methods:
 * `connect(...)`, which follows the syntax for `\_PDO::construct()` and must be called before calling any other static method.
-* `execute($query, $values)`, which is a combination of `\PDO::prepare()` and `\PDO::bindValue`.  The first argument is a SQL query, and the second argument is an array of typed parameters whose values are to be bound to the query, having the format `['value' => $value, 'type' => \PDO::PARAM_*]`.
+* `execute(string $query, array $values)`, which is a combination of `\PDO::prepare()` and `\PDO::bindValue`.  The first argument is a SQL query, and the second argument is an array of typed parameters whose values are to be bound to the query, having the format `['value' => $value, 'type' => \PDO::PARAM_*]`.
 
 ### QueryString
 While accessing query string variables is simple using `$_GET`, the QueryString class allows for easy manipulation and generation of complete query strings.
-It extends the `\ArrayObject` class, and it manipulated using non-static methods, but the `get()` static method returns a new instance.
+It extends the `\ArrayObject` class, and is manipulated using non-static methods, but the `get()` static method returns a new instance.
 
-### Boostrap
+### Bootstrap
 Many of the sites I create use the [Bootstrap](https://getbootstrap.com/) frontend toolkit, and this static class provides simple creation for a few common elements, including:
 * Alerts (optionally dismissible)
 * Modals (optionally static)

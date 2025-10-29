@@ -209,7 +209,7 @@ class Bootstrap
             }
             $url = QueryString::get()->merge(['sort' => $sorts])->build();
             if ($has_priority) {
-                $link_class = 'link-dark';
+                $link_class = 'link-primary';
             } else {
                 $link_class = 'link-secondary';
             }
